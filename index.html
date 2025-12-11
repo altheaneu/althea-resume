@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Althea P. Cocamas - Web Résumé</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f4f6fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1d3557, #457b9d);
+      color: #fff;
+      padding: 20px 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 6px;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    header .title-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #f1faee;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background: rgba(241, 250, 238, 0.15);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 25px auto 40px;
+      padding: 0 15px;
+    }
+
+    .section {
+      background: #ffffff;
+      padding: 20px 20px 15px;
+      margin-bottom: 18px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      font-size: 1.2rem;
+      color: #1d3557;
+      border-bottom: 2px solid #e5e9f0;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .personal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 8px 30px;
+      font-size: 0.92rem;
+    }
+
+    .personal-grid p span {
+      font-weight: bold;
+      color: #1d3557;
+    }
+
+    ul {
+      list-style: disc inside;
+      margin-left: 5px;
+      font-size: 0.95rem;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      background: #e9f2ff;
+      color: #1d3557;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #777;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #555;
+      padding: 15px 10px 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER WITH PHOTO -->
+  <header>
+    <img src="Althea P. Cocamas.jpg" alt="Profile Photo">
+    <div class="title-block">
+      <h1>ALTHEA P. COCAMAS</h1>
+      <p>Aspiring Mechanical Engineer</p>
+
+      <nav>
+        <a href="#education">Educational Background</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards & Certifications</a>
+        <a href="#inventions">Inventions</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- PERSONAL INFORMATION -->
+    <section class="section" id="personal-info">
+      <h2>Personal Information</h2>
+      <div class="personal-grid">
+        <p><span>Name:</span> Althea P. Cocamas</p>
+        <p><span>Home Address:</span> Sitio Kaypalong near 753, San Vicente, Santa Maria, Bulacan, 3022</p>
+        <p><span>Contact No.:</span> (+63) 945 108 4341</p>
+        <p><span>Date of Birth:</span> November 2, 2006</p>
+        <p><span>Place of Birth:</span> Meycauayan, Bulacan</p>
+        <p><span>Gender:</span> Female</p>
+        <p><span>Height:</span> 5’3 ft</p>
+        <p><span>Weight:</span> 45 kg</p>
+        <p><span>Civil Status:</span> Single</p>
+        <p><span>Citizenship:</span> Filipino</p>
+        <p><span>Nationality:</span> Filipino</p>
+        <p><span>Ethnicity:</span> Tagalog</p>
+        <p><span>Religion:</span> Iglesia Ni Cristo</p>
+      </div>
+    </section>
+
+    <!-- CAREER OBJECTIVE -->
+    <section class="section" id="objective">
+      <h2>Career Objective</h2>
+      <p>
+        To join a progressive company where I can apply my skills, take on challenging projects, and continuously grow
+        professionally as an aspiring mechanical engineer, while contributing to the team’s success and advancing my career.
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <h2>Educational Background</h2>
+      <div class="two-column">
+        <div>
+          <p class="subheading">Senior High School (2023–2025)</p>
+          <p><strong>STI College Sta. Maria</strong></p>
+          <p>Mechanical Engineering Preparation Track</p>
+          <p>Poblacion, Santa Maria, Bulacan</p>
+        </div>
+        <div>
+          <p class="subheading">Junior High School (2021–2023)</p>
+          <p><strong>Grace Christian Academy</strong></p>
+          <p>Bulac, Santa Maria, Bulacan</p>
+        </div>
+        <div>
+          <p class="subheading">Elementary (2012–2021)</p>
+          <p><strong>St. Joseph College of Bulacan</strong></p>
+          <p>San Jose, Patag, Santa Maria, Bulacan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALIFICATIONS -->
+    <section class="section" id="qualifications">
+      <h2>Qualifications</h2>
+      <ul>
+        <li>Strong analytical and problem‑solving skills relevant to mechanical engineering</li>
+        <li>Solid understanding of basic engineering concepts and technical processes</li>
+        <li>Consistent honor student with excellent performance in mathematics and science</li>
+        <li>Effective communicator with leadership experience in student organizations</li>
+        <li>Fast learner with the ability to adapt to new tools, technologies, and environments</li>
+        <li>Proficient in MS Office and capable of preparing technical reports and documentation</li>
+        <li>Highly motivated, hardworking, and committed to pursuing a career in mechanical engineering</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="tag-list">
+        <span class="tag">Fast learner</span>
+        <span class="tag">Good communicator</span>
+        <span class="tag">Flexible</span>
+        <span class="tag">Passionate and hardworking</span>
+        <span class="tag">Active listening</span>
+        <span class="tag">Adaptability</span>
+        <span class="tag">Strong work ethic</span>
+        <span class="tag">Multitasking</span>
+        <span class="tag">Critical thinker</span>
+      </div>
+    </section>
+
+    <!-- AWARDS & CERTIFICATIONS -->
+    <section class="section" id="awards">
+      <h2>Awards & Certifications</h2>
+
+      <p class="subheading">Awards</p>
+      <ul>
+        <li>Consistent Honor Student (Elementary to Senior High School)</li>
+        <li>Best in Math (High School)</li>
+        <li>Best in Science (High School)</li>
+      </ul>
+
+      <p class="subheading" style="margin-top: 10px;">Certifications / Eligibility</p>
+      <p class="note">
+        Currently preparing to pursue technical certifications related to mechanical engineering, including CAD training, machining NC II, and basic safety seminars. This section will be updated as certifications are completed.
+      </p>
+    </section>
+
+    <!-- INVENTIONS -->
+    <section class="section" id="inventions">
+      <h2>Inventions & Publications</h2>
+
+      <p class="subheading">Shockproof Earthquake‑Resistant Building Prototype</p>
+      <p>
+        Designed and constructed a scale model of an earthquake‑resistant building using shock‑absorbing materials and structural reinforcement techniques. The prototype demonstrated improved stability and vibration reduction during simulated seismic activity, showcasing an understanding of load distribution, damping, and structural safety.
+      </p>
+
+      <p class="subheading" style="margin-top: 15px;">MARS (Medical Alarm Robot System)</p>
+      <p>
+        Developed a functional prototype of a mobile robotic system designed to deliver medicines to patients who require minimal physical contact due to illness or mobility limitations. The robot integrates timed medication reminders and autonomous delivery features to assist elderly individuals and reduce caregiver workload.
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Prepared by <strong>Althea P. Cocamas</strong> | Contact: (+63) 945 108 4341</p>
+  </footer>
+
+</body>
+</html>
